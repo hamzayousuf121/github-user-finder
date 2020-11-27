@@ -1,0 +1,14 @@
+.red {
+  color:  red;
+}
+
+.green {
+  color: green;
+}
+.center{
+  display: flex;
+  width: 300px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
