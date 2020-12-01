@@ -15,6 +15,10 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount(){
+    this.fetchUser();
+  }
+
 
   handleSearch = (e) => {
     this.setState({
