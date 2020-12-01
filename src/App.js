@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      search: '',
+      search: 'hamzayousuf121',
       users: {},
       loading: false,
       userExist : false,

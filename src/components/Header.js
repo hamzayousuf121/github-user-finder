@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Navbar,
   NavbarBrand,
-  NavbarText,
   Nav
 } from 'reactstrap';
 import githublogo from '../assets/github.png'
