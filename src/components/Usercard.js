@@ -7,13 +7,13 @@ import {
 const UserCard = (props) => {
   const { avatar_url, created_at, public_repos, name, location, bio } = props.userRecord;
   return (
-
-    <div className="offset-lg-2 col-4 mt-2 col-sm-12 col-md-6" >
+      <center>
+    <div className="mt-2 col-sm-12 col-md-6 col-lg-6" >
       {props.userExist &&
       <>
         <h1>Github User</h1>
         <Card>
-        <CardImg top width="100%" height="50%" src={avatar_url} alt="Card image cap" />
+        <CardImg top className="userImg img-fluid" src={avatar_url} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h5"><b>User Name :</b> {name}</CardTitle>
           <CardText tag="h6" className="mb-2 text-muted"><b>Location :  </b>{location}</CardText>
@@ -25,6 +25,7 @@ const UserCard = (props) => {
       </>
       }    
     </div>
+    </center>
   ); 
 };
 
