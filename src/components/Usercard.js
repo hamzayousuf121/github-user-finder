@@ -14,9 +14,9 @@ const UserCard = (props) => {
         <h1>Github User</h1>
         <Card>
         <CardImg top className="userImg img-fluid" src={avatar_url} alt="Card image cap" />
-        <CardBody>
+        <CardBody className="text-left">
           <CardTitle tag="h5"><b>User Name :</b> {name}</CardTitle>
-          <CardText tag="h6" className="mb-2 text-muted"><b>Location :  </b>{location}</CardText>
+          <CardText><b>Location :  </b>{location}</CardText>
           <CardText><b>Description :</b> {bio}</CardText>
           <CardText><b>Repository :</b> {public_repos}</CardText>
           <CardText><b>Created_at :</b> {new Date(created_at).toDateString()}</CardText>
